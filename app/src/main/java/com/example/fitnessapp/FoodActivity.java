@@ -1,5 +1,6 @@
 package com.example.fitnessapp;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -41,6 +42,7 @@ public class FoodActivity extends AppCompatActivity {
         startActivity(new Intent(FoodActivity.this,MainActivity.class));
         finish();
     }
+    @SuppressLint("MissingSuperCall")
     public void onBackPressed() {
         //super.onBackPressed();
         startActivity(new Intent(FoodActivity.this,MainActivity.class));

@@ -1,5 +1,6 @@
 package com.example.fitnessapp;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -18,6 +19,7 @@ public class ExerciseActivity extends AppCompatActivity {
     private boolean MTimeRunning;
     private long MTimeLeftMills;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
